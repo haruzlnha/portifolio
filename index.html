@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haru Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a54fe7b63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="/images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Developer・Designer・Social Media</p>
+            <h1> Olá, Meu nome é <br>Ana <span>Haru</span> Sichieri </h1>
+        </div>
+    </div>
+</div>
+<!----------------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/eu 6.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Sou uma entusiasta de tecnologia e estudante de Análise e Desenvolvimento de Sistemas apaixonada por criar soluções inovadoras e impactantes. 
+                    Com um forte conhecimento em linguagens como Python, JavaScript, HTML & CSS e Node.js, estou em busca de desafios que me permitam aplicar e 
+                    expandir minhas habilidades de desenvolvimento. <br><br>
+                    Minha jornada na tecnologia começou recentemente com uma curiosidade insaciável e, 
+                    ao longo do tempo, transformei essa paixão em resultados tangíveis. Além do meu conhecimento técnico, 
+                    também tenho mais de 2 anos de experiência em gestão de redes sociais, onde pude desenvolver estratégias criativas para aumentar o 
+                    engajamento e a visibilidade online. <br><br>
+                    Meu objetivo é combinar meu background em desenvolvimento de software com minha habilidade em estratégias de 
+                    marketing digital para criar produtos que não apenas funcionem bem, mas também tenham um impacto significativo na vida das pessoas. 
+                    Estou sempre em busca de novas oportunidades de aprendizado e colaboração, e estou animada para fazer parte de projetos desafiadores e inovadores.</p>
+                <div class="table-titles">
+                    <p class="tab-links active-link" onclick="opentab(`skills`)">Habilidades</p>
+                    <p class="tab-links"onclick="opentab(`experience`)">Experiências</p>
+                    <p class="tab-links"onclick="opentab(`education`)">Educação</p>
+                </div>
+                <div class="tab-contents  active-tab"  id="skills">
+                    <ul>
+                        <li><span>HTML&CSS e JavaScript </span><br>Front-end</li>
+                        <li><span>Node.js, Python, MySQL</span><br>Back-end</li>
+                        <li><span>Adobe After Effects</span><br>Edição de vídeos</li>
+                        <li><span>Adobe Premiere</span><br>Edição de vídeos</li>
+                        <li><span>Adobe Photoshop</span><br>Edição de vídeos</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="experience">
+                    <ul>
+                        <li><span>Wizard by Pearson</span><br>Planejamento de eventos, organização de aulas e monitoramento dos alunos.</li>
+                        <li><span>Steel Design</span><br>Criação, captação, edição e aplicação de conteúdos de marketing criativos. </li>
+                        <li><span>TBKLusa Esports</span><br>Planejamento e engajamento de conteúdos orgânicos.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="education">
+                    <ul>
+                        <li><span>Jan 2022 - Ago 2022 (Interrompido)</span><br>Design em UNISO</li>
+                    <ul>
+                        <li><span>Ago 2022 - Atual</span><br>Análise e Desenvolvimento de Sistemas em UNINTER</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------services------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Serviços</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-user-plus"></i>
+                <h2>Social Media</h2>
+                <p>Criação, gestão e engajamento de redes sociais.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>UI/UX Design</h2>
+                <p>Criação de interfaces e designs para o usuário.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>FullStack Development</h2>
+                <p> Desenvolvimento de interface e aplicativos.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Meus projetos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/calculadora.png">
+                <div class="layer">
+                    <h3>Python Calculator</h3>
+                    <p>Calculadora simples de Python com interface.
+                    <br>Feita com a ferramenta tkinter.</p>
+                    <a href="https://github.com/haruzlnha/calculadora-python"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/spotify.png">
+                <div class="layer">
+                    <h3>(Em construção)</h3>
+                    <p>Pegue um café e espere um pouco, estou desenvolvendo o projeto.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/SITE.jpeg ">
+                <div class="layer">
+                    <h3>(Em construção)</h3>
+                    <p>Pegue um café e espere um pouco, estou desenvolvendo o projeto.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Veja mais</a>
+    </div>
+</div>
+<!----------------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> dulcesichieri@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 15981183416</p>
+                <div class="social-icons">
+                    <a href="https://https://github.com/haruzlnha"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ana-sichieri/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://www.instagram.com/haruvlr/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/haruvlr"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i><br>by Haru</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
